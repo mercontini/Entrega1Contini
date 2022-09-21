@@ -1,0 +1,56 @@
+{% extends "AppFinal/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+{% endblock %}
+
+{% block descripcion %}
+Aqui podrás investigar las diferentes actividades disponibles:
+{% endblock %}
+
+{% block boton %}
+   OPCIONES
+{% endblock %}
+
+{% block imagen2 %}
+<div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'AppFinal/assets/img/actividades.jpg'%}" alt="..." /></div>
+{% endblock %} 
+
+{% block textoactividades %}
+
+Muchas opciones diferentes, dependiendo de tus preferencias y gustos
+
+{% endblock %} 
+
+
+{% block imagen3 %}
+<section class="py-5">
+   <div class="container my-5">
+       <div class="row justify-content-center">
+           <div class="col-lg-6">
+               <h2>Actividad y Excursiones</h2>
+               <p class="lead">Por favor, ingrese sus preferencias.</p>
+
+               {% if ActividadFormulario.errors %}
+
+               <p class="mb-0">Revisar.</p>
+
+               {% endif %}
+
+               <form action="" method="POST">{% csrf_token %}
+                   <table>
+                       {{ ActividadFormulario.as_table }}
+                   </table>
+                   
+                   <input type="submit",value="Enviar">
+
+
+               </form>
+           </div>
+       </div>
+   </div>
+</section>
+
+{% endblock %}

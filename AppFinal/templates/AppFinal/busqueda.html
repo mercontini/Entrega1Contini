@@ -1,0 +1,42 @@
+{% extends "AppFinal/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+{% endblock %}
+
+{% block descripcion %}
+Elegí el destino y encontrá las reseñas de nuestros lectores:
+{% endblock %}
+
+{% block boton %}
+INVESTIGÁ!
+{% endblock %}
+
+{% block imagen3 %}
+
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2>Buscador de reseñas</h2>
+
+                <p class="lead">Ingrese la provincia de preferencia:</p>
+                
+                <form action="buscar/" method="GET">
+                    <input name="provincia" id="provincia">
+                    <input type="submit"value="Buscar">
+                </form>
+                
+
+                
+
+                
+            </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

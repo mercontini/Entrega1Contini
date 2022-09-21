@@ -1,0 +1,41 @@
+{% extends "AppFinal/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+{% endblock %}
+
+{% block descripcion %}
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2>Búsqueda de Reseñas</h2>
+
+                <p class="lead">El resultado de tu búsqueda es:</p>
+                
+               
+               
+                <ul>
+                    {% for x in ciudad %}
+                            <li>Ciudad: {{x.ciudad}}</li>
+                            <li>Provincia: {{x.provincia}}</li>  
+
+                            {% endfor %}
+                    
+               
+                <p class="mb-0"> {{respuesta}}</p>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block boton %}
+{% endblock %}
+
+{% block imagen3 %}
+
+{% endblock %}

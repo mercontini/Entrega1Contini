@@ -7,30 +7,28 @@
 {% endblock %}
 
 {% block descripcion %}
-A la hora de decidir cómo trasladarte, es muy importante conocer nuestras prioridades!
+
+Destinos: ¿Cuál es tu destino ideal?
+
 {% endblock %}
 
 {% block boton %}
-   CONTINUAR
+
+
+   Vamos a investigar!
+
+
 {% endblock %}
-
-{% block imagen2 %}
-
-{% endblock %} 
-
-{% block textoactividades %}
-
-{% endblock %} 
 
 {% block imagen3 %}
 <section class="py-5">
    <div class="container my-5">
        <div class="row justify-content-center">
            <div class="col-lg-6">
-               <h2>Traslados</h2>
-               <p class="lead">Por favor, ingrese sus preferencias.</p>
+               <h2>Destino</h2>
+               <p class="lead">Por favor, ingrese el destino de su preferencia.</p>
 
-               {% if TrasladoFormulario.errors %}
+               {% if DestinoFormulario.errors %}
 
                <p class="mb-0">Revisar.</p>
 
@@ -38,7 +36,7 @@ A la hora de decidir cómo trasladarte, es muy importante conocer nuestras prior
 
                <form action="" method="POST">{% csrf_token %}
                    <table>
-                       {{ TrasladoFormulario.as_table }}
+                       {{ DestinoFormulario.as_table }}
                    </table>
                    
                    <input type="submit",value="Enviar">
