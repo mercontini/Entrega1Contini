@@ -1,5 +1,5 @@
 El Blog del viajero. 
-Este es tu blog de viajes por Argentina, que incluye destinos, actividades y traslados, brindando la opción de elegir en base a sus preferencias. 
+Este es tu blog de viajes por Argentina, que incluye la posibilidad de indicar destinos, actividades y traslados, en base a sus preferencias, para poder asesorar al usuario en la organización de su viaje.
 Las diferentes secciones son:
 INICIO:visión general de la página
 DESTINOS: Se debe introducir información relativa al destino de preferencia.
